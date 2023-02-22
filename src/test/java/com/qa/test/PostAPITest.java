@@ -44,7 +44,7 @@ public class PostAPITest extends TestBase{
 		HashMap<String, String> headerMap = new HashMap<String, String>();
 		headerMap.put("Content-Type","application/json");
 		
-		//Jackson API:
+		//Jackson 3API:
 		ObjectMapper mapper = new ObjectMapper();
 		Users users = new Users("Ram","leader");
 		
