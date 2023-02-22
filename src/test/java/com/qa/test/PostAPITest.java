@@ -57,7 +57,7 @@ public class PostAPITest extends TestBase{
 		
 		closeableHttpResponse = restClient.post(url, usersJsonString, headerMap);
 		
-		//1. statuscode:
+		//1. Status Code:
 		int statusCode = closeableHttpResponse.getStatusLine().getStatusCode();
 		Assert.assertEquals(statusCode, testBase.RESPONSE_STATUS_CODE_201);
 		
