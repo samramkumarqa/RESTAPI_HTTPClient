@@ -47,7 +47,7 @@ public class GetAPITest extends TestBase{
 
 		Assert.assertEquals(statuscode, RESPONSE_STATUS_CODE_200, "Status code is not 200");
 
-		// b. Json String:
+		// b. JSON String:   
 		String responseString = EntityUtils.toString(closeableHttpResponse.getEntity(), "UTF-8");
 
 		JSONObject responseJson = new JSONObject(responseString);
